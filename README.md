@@ -52,8 +52,9 @@ This will execute:
 
 ## 📊 Models Trained
 
-The pipeline evaluates the following classifiers:
+The pipeline evaluates the following classifiers, yielding:
 
+```
 - Gaussian Naive Bayes           (F1:0.70, Acc:0.67)
 - K-Nearest Neighbors            (F1:0.71, Acc:0.75)
 - Logistic Regression            (F1:0.83, Acc:0.84)
@@ -61,6 +62,7 @@ The pipeline evaluates the following classifiers:
 - Support Vector Machine (SVC)   (F1:0.68, Acc:0.78)
 - Decision Tree                  (F1:0.77, Acc:0.77)
 - Random Forest                  (F1:0.82, Acc:0.84)
+```
 
 Each model is scored using **F1 Score** and **Accuracy**, with comparison plots for validation performance.
 
@@ -77,6 +79,7 @@ Grid search is performed for all classifiers with cross-validation, tuning param
 
 The best model is selected based on F1 score and used to predict on the test set.
 
+```
 Naive Bayes:          0.8103725873166571
 KNeighborsClassifier: 0.7278787845763692
 LogisticRegression:   0.8266027051135619
@@ -84,6 +87,7 @@ MLPClassifier:        0.8293428870644503
 SVC:                  0.6800675935481126
 DecisionTree:         0.786803708667071
 RandomForest:         0.8278891397805659
+```
 
 ---
 
