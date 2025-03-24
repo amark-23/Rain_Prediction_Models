@@ -16,8 +16,8 @@ rainfall-prediction/
 ├── datasets/
   ├── train-val.csv              # Train-Val dataset
   └── test.csv                   # Test dataset
-├── pipeline.py                # Run the full pipeline end-to-end
-└── requirements.txt           # Package Requirements
+├── pipeline.py                  # Run the full pipeline end-to-end
+└── requirements.txt             # Package Requirements
 
 ```
 
