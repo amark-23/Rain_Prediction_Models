@@ -22,7 +22,7 @@ rainfall-prediction/
 
 ##  How to Run
 
-1. **Install dependencies and check Python version(at least 3.8)**
+1. **Install dependencies and check Python version (3.8+)**
 
 ```bash
 python -V
