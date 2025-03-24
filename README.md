@@ -1,8 +1,3 @@
-
-
-### 📘 `Rain Prediction Machine Learning Models`
-
-```markdown
 # 🌧️ Rainfall Prediction Pipeline
 
 A complete machine learning pipeline for rainfall prediction using real-world weather data. The project handles everything from exploratory analysis to model optimization, and is organized into modular Python scripts for clarity and reuse.
