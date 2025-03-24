@@ -10,15 +10,15 @@ df = pd.read_csv("train-val.csv")  # Make sure this file is in your working dire
 # Drop 'ID' column if it exists
 df_no_id = df.drop(columns=['ID'], errors='ignore')
 
-# 2a. Number of samples and features
+# Number of samples and features
 num_samples, num_features = df.shape
-print("\033[1;34m----- 2a: Number of Samples and Features -------------------------------------------------------\033[0m")
+print("\033[1;34m-----  Number of Samples and Features -------------------------------------------------------\033[0m")
 print(f"\033[1;32mNumber of samples:\033[0m {num_samples}")
 print(f"\033[1;32mNumber of features:\033[0m {num_features}")
 print("\n")
 
-# 2b, 2c. Feature labels and data types
-print("\033[1;34m----- 2b,c: Feature Labels & Data Types -----------------------------------------------------\033[0m")
+# Feature labels and data types
+print("\033[1;34m----- Feature Labels & Data Types -----------------------------------------------------\033[0m")
 df_info = pd.DataFrame({
     "Label": df.columns,
     "Data Type": df.dtypes.values
@@ -26,8 +26,8 @@ df_info = pd.DataFrame({
 print(df_info)
 print("\n")
 
-# 2d. Unique categories in categorical features
-print("\033[1;34m----- 2d: Unique Categories in Categorical Features --------------------------------------------\033[0m")
+# Unique categories in categorical features
+print("\033[1;34m----- Unique Categories in Categorical Features --------------------------------------------\033[0m")
 categorical_columns = df_no_id.select_dtypes(include=['object']).columns
 for col in categorical_columns:
     print(f"\033[1;36mFeature:\033[0m {col}")
@@ -36,16 +36,16 @@ for col in categorical_columns:
     print("\033[1;37m" + "-" * 80 + "\033[0m")
 print("\n")
 
-# 2e. Value counts per category
-print("\033[1;34m----- 2e: Sample Distribution per Category ------------------------------------------------------------\033[0m")
+# Value counts per category
+print("\033[1;34m----- Sample Distribution per Category ------------------------------------------------------------\033[0m")
 for col in categorical_columns:
     print(f"\033[1;36mDistribution for feature '{col}':\033[0m")
     print(df_no_id[col].value_counts())
     print("\033[1;37m" + "-" * 80 + "\033[0m")
 print("\n")
 
-# 2f. Correlation between numerical features
-print("\033[1;34m----- 2f: Correlation Between Numerical Features ------------------------------------------------------\033[0m")
+# Correlation between numerical features
+print("\033[1;34m----- Correlation Between Numerical Features ------------------------------------------------------\033[0m")
 
 numerical_columns = df_no_id.select_dtypes(include=['float64', 'int64','int32']).columns
 correlation_matrix = df_no_id[numerical_columns].corr()
@@ -66,8 +66,8 @@ sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidt
 plt.title("Correlation Heatmap of Numerical Features", fontsize=16)
 plt.show()
 
-# 2g. Additional insights
-print("\033[1;34m \n----- 2g: Additional Useful Information ---------------------------------------------------------------------\033[0m\n")
+# Additional insights
+print("\033[1;34m \n----- Additional Useful Information ---------------------------------------------------------------------\033[0m\n")
 
 # Missing values
 print("\033[1;34m----- Missing Values ----------------------------------------------------------------------\033[0m")
