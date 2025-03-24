@@ -8,14 +8,17 @@ A complete machine learning pipeline for rainfall prediction using real-world we
 
 ```
 rainfall-prediction/
-├── data_analysis.py           # Exploratory Data Analysis (EDA)
-├── data_modification.py       # Data cleaning, feature engineering, scaling
-├── training.py                # Training multiple classifiers & evaluation
-├── optimization.py            # Grid search + test set prediction
+├── scripts/
+  ├── data_analysis.py           # Exploratory Data Analysis (EDA)
+  ├── data_modification.py       # Data cleaning, feature engineering, scaling
+  ├── training.py                # Training multiple classifiers & evaluation
+  └── optimization.py            # Grid search + test set prediction
+├── datasets/
+  ├── train-val.csv              # Train-Val dataset
+  └── test.csv                   # Test dataset
 ├── pipeline.py                # Run the full pipeline end-to-end
-├── requirements.txt           # Package Requirements
-└── train-val.csv              # Train-Val dataset
-└── test.csv                   # Test dataset
+└── requirements.txt           # Package Requirements
+
 ```
 
 ---
@@ -31,8 +34,8 @@ pip install -r requirements.txt
 
 2. **Place your datasets**
 
-- `train-val.csv` in the project root (used for training and validation)
-- `test.csv` in the project root (used for final prediction)
+- `train-val.csv` in datasets/ (used for training and validation)
+- `test.csv` in the datasets/ (used for final prediction)
 
 3. **Run the pipeline**
 
