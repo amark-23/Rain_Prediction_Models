@@ -10,7 +10,7 @@ def run_pipeline():
     print("\033[1;34m[Step 3] Model Training and Evaluation\033[0m")
     import training
 
-    print("\033[1;34m[Step 4] Optimization, Test Prediction & Submission\033[0m")
+    print("\033[1;34m[Step 4] Optimization & Test Prediction \033[0m")
     import optimization
 
     print("\033[1;32mPipeline complete.\033[0m")
