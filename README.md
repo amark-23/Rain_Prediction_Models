@@ -4,7 +4,7 @@ A complete machine learning pipeline for rainfall prediction using real-world we
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 rainfall-prediction/
@@ -22,9 +22,10 @@ rainfall-prediction/
 
 ##  How to Run
 
-1. **Install dependencies**
+1. **Install dependencies and check Python version(at least 3.8)**
 
 ```bash
+python -V
 pip install -r requirements.txt
 ```
 
@@ -86,7 +87,7 @@ RandomForest:         0.8278891397805659
 
 ---
 
-## 📁 Output Files
+## Output Files
 
 - `data_splits.joblib`: Preprocessed training/validation data
 - `classifiers.joblib`: Dictionary of trained classifiers
@@ -95,16 +96,11 @@ RandomForest:         0.8278891397805659
 
 ---
 
-##  Requirements
 
-Python 3.8+  
-
----
-
-## 📌 Notes
+##  Notes
 
 - This project is intended for educational purposes.
-- Data preprocessing includes thoughtful handling of cyclic features, log transforms, and missing data imputation.
+- Data preprocessing includes thoughtful handling of cyclic features, log transforms, and missing data imputation. Modification may introduce better results.
 - The pipeline is modular and easily extensible.
 - Access to a GPU is recommended.
 
