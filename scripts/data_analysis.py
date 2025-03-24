@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load dataset
-df = pd.read_csv("train-val.csv")  # Make sure this file is in your working directory
+df = pd.read_csv("datasets/train-val.csv")  # Make sure this file is in your working directory
 
 # Drop 'ID' column if it exists
 df_no_id = df.drop(columns=['ID'], errors='ignore')

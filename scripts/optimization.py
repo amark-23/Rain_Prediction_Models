@@ -15,7 +15,7 @@ classifiers = joblib.load("classifiers.joblib")
 X_train, X_val, y_train, y_val = joblib.load("data_splits.joblib")
 
 # Load test set
-df_test = pd.read_csv("test.csv")
+df_test = pd.read_csv("datasets/test.csv")
 
 # Feature engineering
 df_test['MaxTemp'] = (df_test['MaxTemp'] + df_test['Temp3pm']) / 2

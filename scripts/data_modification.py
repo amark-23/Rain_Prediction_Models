@@ -8,7 +8,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
 
 # Load dataset
-df = pd.read_csv("train-val.csv")
+df = pd.read_csv("datasets/train-val.csv")
 
 # Feature Engineering - Combine highly correlated columns
 df['MaxTemp'] = (df['MaxTemp'] + df['Temp3pm']) / 2
